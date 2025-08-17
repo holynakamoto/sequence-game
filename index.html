@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence Game - Enhanced</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-header">
+    <h1 class="game-title">SEQUENCE</h1>
+    <div class="game-info">
+      <div id="currentPlayer" class="current-player team-red">Red Team's Turn</div>
+      <div class="sequences-count">
+        Red Sequences: <span id="redSequences">0</span> |
+        Blue Sequences: <span id="blueSequences">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="new-game-btn" onclick="newGame()">New Game</button>
+    <button class="remove-chip-btn" onclick="toggleRemoveMode()" id="removeModeBtn">Remove Chip Mode: OFF</button>
+  </div>
+
+  <div class="game-board" id="gameBoard"></div>
+
+  <div class="player-hand" id="playerHand"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
